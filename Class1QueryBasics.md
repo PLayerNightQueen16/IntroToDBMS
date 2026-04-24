@@ -180,12 +180,27 @@ These databases are also called **Relational Databases (RDBMS)**.
 In a relational database:
 
 * Data is stored in **tables** (rows and columns)
+* Each table represents an **entity**
 * Tables can be **connected (related)** to each other using keys
 
 👉 Example:
 
 * A `Students` table can be linked to a `Courses` table
 * Relationships help avoid duplication and keep data organized
+
+### 🧩 Attributes and Values
+
+* **Attributes (Columns)**
+  These define the properties of an entity and store values of the same type for every record (homogenous).
+  👉 Example: `StudentID`, `Name`, `Email`, `Batch`
+
+* **Values (Cell Data)**
+  These are the actual data entries for each attribute
+  👉 Example: `101`, `Shreya`, `shreya@email.com`, `2026`
+
+* **Rows (Records/Tuples)**
+  A complete set of values for one entity
+  👉 One row = one student
 
 ### ⚡️ Key Features of SQL Databases
 
@@ -199,5 +214,50 @@ In a relational database:
 > A SQL (relational) database organizes data into tables and links them together, making large datasets easy to manage, query, and maintain.
 
 ---
+## 🧩 Schema
 
+A **schema** defines the structure of a table in a database.
+
+It specifies:
+
+* **Columns (Attributes)**
+  What fields exist in the table
+
+* **Data Types**
+  What kind of data each column can store (e.g., INT, VARCHAR, DATE)
+
+* **Constraints (Rules)**
+  Conditions applied to data to ensure accuracy and integrity
+
+### 🔑 Common Constraints in a Schema
+
+* **PRIMARY KEY**
+  Uniquely identifies each row in a table
+  👉 Cannot be NULL or duplicate
+
+* **FOREIGN KEY**
+  Creates a relationship between two tables
+  👉 References a PRIMARY KEY in another table
+
+* **NOT NULL**
+  Ensures a column must have a value
+
+* **UNIQUE**
+  Prevents duplicate values in a column
+
+* **DEFAULT**
+  Assigns a default value if none is provided
+
+* **CHECK**
+  Ensures values satisfy a specific condition
+
+* **AUTO INCREMENT**
+  Automatically generates sequential values (commonly for IDs)
+
+
+### 🧠 In Simple Terms
+
+> A schema is the blueprint of a table that defines its columns, data types, and rules (like keys and constraints) to keep data organized and reliable.
+
+---
 
