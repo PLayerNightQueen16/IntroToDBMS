@@ -92,5 +92,112 @@ So systems use a layered approach to get the **best of both worlds**.
 
 ---
 
+## 🧪 Example Case: Managing Student Data
+
+Let’s say we’re building a small app for **SST students**.
+
+### 📌 Required Data
+
+* Student ID
+* Name
+* Email ID
+* Batch
+* Contact Number
+
+---
+
+### 📈 How Data Storage Evolves
+
+* **👥 10 Students**
+  A simple notebook works fine
+  👉 Easy to read and manage manually
+
+* **📄 500 Students**
+  Move to an Excel/CSV file
+  👉 Better organization, basic sorting/filtering
+
+* **🧠 10,000+ Students**
+  Flat files start breaking down
+  👉 Slow, messy, and hard to maintain
+
+### 🚧 Challenges at Scale
+
+At large scale, we need a system where:
+
+* **🔍 Data is searchable**
+  Quickly find any student record
+
+* **🤝 Data is shareable**
+  Multiple users can access and update simultaneously
+
+* **✅ Data is consistent**
+  No duplicates or conflicting entries
+
+* **🔒 Data is secure**
+  Access control for sensitive information
+
+* **⚡️ Data is efficient**
+  Fast retrieval and updates
+
+* **🧩 Data is structured**
+  Clear relationships and organization
+
+### 💡 The Solution: DBMS
+
+This is where a **Database Management System (DBMS)** comes in.
+
+A DBMS allows us to:
+
+* Store large amounts of data efficiently
+* Enforce rules for accuracy and consistency
+* Query data quickly using structured languages (like SQL)
+* Support multiple users without conflicts
+
+### 🚀 Conclusion
+
+As data grows, simple storage methods stop being practical.
+A DBMS becomes essential to ensure **performance, reliability, and scalability**.
+
+---
+## 🗂️ Types of DBMS
+
+In this course, we focus on **SQL databases**, which are among the most widely used data management systems.
+
+### 🧱 Common SQL Databases
+
+* MySQL
+* PostgreSQL
+* Oracle Database
+
+### ❓ What is a SQL Database?
+
+A **SQL (Structured Query Language) database** is used to store and manage data using a structured format.
+
+These databases are also called **Relational Databases (RDBMS)**.
+
+### 🔗 Why “Relational”?
+
+In a relational database:
+
+* Data is stored in **tables** (rows and columns)
+* Tables can be **connected (related)** to each other using keys
+
+👉 Example:
+
+* A `Students` table can be linked to a `Courses` table
+* Relationships help avoid duplication and keep data organized
+
+### ⚡️ Key Features of SQL Databases
+
+* **Structured Data** → Data follows a fixed schema
+* **Relationships** → Tables are connected logically
+* **Querying with SQL** → Easy to retrieve and manipulate data
+* **Data Integrity** → Constraints ensure accuracy
+
+### 🧠 In Simple Terms
+
+> A SQL (relational) database organizes data into tables and links them together, making large datasets easy to manage, query, and maintain.
+
+---
 
 
