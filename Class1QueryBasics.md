@@ -104,8 +104,6 @@ Let’s say we’re building a small app for **SST students**.
 * Batch
 * Contact Number
 
----
-
 ### 📈 How Data Storage Evolves
 
 * **👥 10 Students**
