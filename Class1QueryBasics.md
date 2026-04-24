@@ -259,3 +259,134 @@ It specifies:
 
 ---
 
+## 🗄️ SQL Basics Cheat Sheet
+
+A quick reference for the most commonly used SQL commands in this course.
+
+### 🧭 Database Operations
+
+#### 🔍 Show all databases
+
+```sql
+SHOW DATABASES;
+```
+
+#### ➕ Create a database
+
+```sql
+CREATE DATABASE database_name;
+```
+
+#### 📂 Use a database
+
+```sql
+USE database_name;
+```
+
+#### ❌ Delete a database
+
+```sql
+DROP DATABASE database_name;
+```
+
+### 🧱 Table Operations
+
+#### 📋 Show all tables
+
+```sql
+SHOW TABLES;
+```
+
+#### 🏗️ Create a table
+
+```sql
+CREATE TABLE table_name (
+    column1 datatype constraints,
+    column2 datatype constraints,
+    ...
+);
+```
+
+#### 🔎 Describe table structure
+
+```sql
+DESC table_name;
+```
+
+#### ❌ Delete a table
+
+```sql
+DROP TABLE table_name;
+```
+
+### 📥 Insert Data
+
+#### ➕ Insert values into table
+
+```sql
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...);
+```
+
+### 🔍 Retrieve Data
+
+#### 📄 Select all data
+
+```sql
+SELECT * FROM table_name;
+```
+
+#### 🎯 Select specific columns
+
+```sql
+SELECT column1, column2 FROM table_name;
+```
+
+### ✏️ Update Data
+
+#### 🔄 Update existing records
+
+```sql
+UPDATE table_name
+SET column1 = value1
+WHERE condition;
+```
+
+### ❌ Delete Data
+
+#### 🗑️ Delete specific records
+
+```sql
+DELETE FROM table_name
+WHERE condition;
+```
+
+### ⚡️ Useful Extras
+
+#### 🔑 Create table with primary key
+
+```sql
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+```
+
+#### 🔁 Auto increment ID
+
+```sql
+id INT AUTO_INCREMENT PRIMARY KEY
+```
+
+### 🧠 Quick Tips
+
+* SQL keywords are **case-insensitive** (`SELECT` = `select`)
+* Always end statements with `;`
+* Use `WHERE` to avoid updating/deleting all rows
+* Avoid trailing commas in queries
+
+### 🚀 In One Line
+
+> SQL lets you create, manage, and query structured data efficiently using simple, readable commands.
+
+---
