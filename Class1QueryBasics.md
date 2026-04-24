@@ -342,6 +342,84 @@ SELECT * FROM table_name;
 SELECT column1, column2 FROM table_name;
 ```
 
+### 🔎 WHERE Clause (Filtering Data)
+
+Used to filter records based on conditions.
+
+#### 📌 Basic syntax
+
+```sql
+SELECT * FROM table_name
+WHERE condition;
+```
+
+#### 🔸 Examples
+
+```sql
+-- exact match
+SELECT * FROM students
+WHERE batch = 'B';
+
+-- multiple conditions
+SELECT * FROM students
+WHERE batch = 'B' AND id > 10;
+
+-- using OR
+SELECT * FROM students
+WHERE batch = 'A' OR batch = 'B';
+```
+
+#### 🔸 Common Operators
+
+* `=` equal to
+* `!=` or `<>` not equal to
+* `>` greater than
+* `<` less than
+* `>=` greater than or equal
+* `<=` less than or equal
+
+#### ⚡️ Conditions inside WHERE
+
+#### 🔹 BETWEEN (range)
+
+```sql
+SELECT * FROM students
+WHERE id BETWEEN 10 AND 20;
+```
+
+#### 🔹 LIKE (pattern matching)
+
+```sql
+-- starts with 'S'
+SELECT * FROM students
+WHERE name LIKE 'S%';
+
+-- ends with 'a'
+SELECT * FROM students
+WHERE name LIKE '%a';
+
+-- contains 'rey'
+SELECT * FROM students
+WHERE name LIKE '%rey%';
+```
+
+#### 🔹 IN (multiple values)
+
+```sql
+SELECT * FROM students
+WHERE batch IN ('A', 'B', 'C');
+```
+
+#### 🔹 AND / OR
+
+```sql
+SELECT * FROM students
+WHERE batch = 'B' AND id > 10;
+
+SELECT * FROM students
+WHERE batch = 'A' OR batch = 'C';
+```
+
 ### ✏️ Update Data
 
 #### 🔄 Update existing records
